@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<!-- **************************************************************************************
+AUTHOR : Spencer Huebler-Davis
+EMAIL  : shuebler@svsu.edu
+URL    : csis.svsu.edu/~shuebler/module4/assignment4.html
+****************************************************************************************-->
+
+<html lang="en">
+
+<head>
+	<title>Coco Loco Website</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.navbar {
+			margin-bottom: 0;
+			broder-radius: 0;
+			background-color: #1F1D1D;
+			color: #FFF;
+			padding: 1% 0;
+			font-size: 1.2em;
+			border: 0;
+		}
+		.navbar-brand {
+			float: left;
+			min-height: 55px;
+			padding: 0 15px 5px;
+		}
+		.navbar-inverse .navbar-nav .active a, navbar-inverse .navbar-nav .active a:focus,
+		navbar-inverse .navbar-nav .active a:hover {
+			color: #FFF;
+			background-color: #1F1D1D;
+		}
+		.navbar-inverse .navbar-nav li a {
+			color: #D5D5D5;
+		}
+		.carousel-caption {
+			top: 50%;
+			transform: translarteY(-50%);
+		}
+		.btn {
+			font-size: 18px;
+			color: #FFF;
+			padding: 12px 22px;
+			background: #1F1D1D;
+			border: 2px solid #FFF;
+		}
+		.container {
+			margin: 4% auto;
+		}
+		footer {
+			width: 100%;
+			background-color: #1F1D1D;
+			padding: 5%;
+			color: #FFF;
+		}
+		footer input[type=text] {
+			border: 1px solid #D5D5D5;
+			background-color: #1F1D1D;
+			color: #FFF;
+		}
+		.fa {
+			padding: 20px;
+			font-size: 50px;
+			color: #FFF;
+		}
+		.fa:hover {
+			color: #D5D5D5;
+			text-decoration: none;
+		}
+		
+		
+		@media (max-width: 900px) {
+			.fa {
+				font-size: 20px;
+				padding: 10px;
+			}
+		}
+		
+		@media (max-width: 600px) {
+			.carousel-caption {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>	
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="csis.svsu.edu/~shuebler/module4/assignment4.html"><img src="img/logo.png" height="60"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/assignment4.html">Home</a></li>
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/baycitymenu.html">Bay City Menu</a></li>
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/saginawmenubay.html">Saginaw Menu (Bay Road)</a></li>
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/saginawmenugratiot.html">Saginaw Menu (Gratiot Road)</a></li>
+					<li class="active"><a href="https://github.com/SpencerHD/module4">My Github</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/cocolocoinside.png" height="100%" width="100%">
+				<div class="carousel-caption">
+					<h1 class="text-uppercase"><strong>Coco Loco Mexican Bar & Grill</strong></h1>
+					<br>
+					<button type="button" class="btn btn-primary btn-lg" value="Input Button"
+					onclick="location.href = 'csis.svsu.edu/~shuebler/cis255/explanations.html';">Explanations</button>
+				</div>
+			</div> <!-- End Active -->
+			<div class="item">
+				<img src="img/cocolocoinside2.png" height="100%" width="100%">
+			</div>
+			<div class="item">
+				<img src="img/cocolocooutside.png" height="100%" width="100%">
+			</div>
+		</div>
+		<!-- Start SLider Controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div> <!-- End Slider -->
+	
+	<div class="container text-center">
+		<h2><strong>About Us</strong></h2>
+		<hr />
+		<h3>At Coco Loco Mexican Bar & Grill, we bring the authentic Mexican food experience to you.
+		With our hacienda styled restaurants, all of our inside decor is hand painted in traditional
+		Mexico style, where not only our food is part of the culture. We have three locations in the
+		Saginaw and Bay City areas, and welcome you to visit us and try our outstanding flavors for
+		all of your favorite foods!</h3>
+		<hr />
+		<hr />
+		<h2><strong>Our Locations</strong></h2>
+		<hr />
+		<h4><strong>Bay City</strong></h4>
+		<h4>201 N. Euclid Avenue</h4>
+		<h4>Bay City, MI 48706</h4>
+		<h4>(989) 439-112</h4>
+		<h4><u>Open Hours:</u></h4>
+		<h4>11:00 a.m. – 10:00 p.m. during Sunday – Thursday</h4>
+		<h4>11:00 a.m. – Midnight during Friday and Saturday</h4>
+		<hr />
+		<h4><strong>Saginaw (Bay Road)</strong></h4>
+		<h4>4002 Bay Road</h4>
+		<h4>Saginaw, MI 48603</h4>
+		<h4>(989) 791-1111</h4>
+		<h4><u>Open Hours:</u></h4>
+		<h4>10:00 a.m. – 10:00 p.m. during Sunday – Thursday</h4>
+		<h4>10:00 a.m. – Midnight during Friday and Saturday</h4>
+		<hr />
+		<h4><strong>Saginaw (Gratiot Road)</strong></h4>
+		<h4>7467 Gratiot Road</h4>
+		<h4>Saginaw, MI 48609</h4>
+		<h4>(989) 781-2255</h4>
+		<h4><u>Open Hours:</u></h4>
+		<h4>11:00 a.m. – 10:00 p.m. during Sunday – Thursday</h4>
+		<h4>11:00 a.m. – Midnight during Friday and Saturday</h4>
+		<hr />
+		<hr />
+	</div>
+	
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-4">
+				<input type="text" placeholder="Search...">
+			</div>
+			<div class="col-sm-4">
+				<h3>Follow Us on Facebook!</h3>
+				<a href="https://www.facebook.com/CocoLocoMexicanGrillAndBar/" class="fa fa-facebook"></a>
+			</div>
+			<div class="col-sm-4">
+				<h3>Tweet Us on Twitter!</h3>
+				<a href="https://twitter.com/CocoLocoBayCity" class="fa fa-twitter"></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

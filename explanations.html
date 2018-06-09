@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!-- **************************************************************************************
+AUTHOR : Spencer Huebler-Davis
+EMAIL  : shuebler@svsu.edu
+URL    : csis.svsu.edu/~shuebler/module4/explanations.html
+****************************************************************************************-->
+
+<html lang="en">
+
+<head>
+	<title>Explanations</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.navbar {
+			margin-bottom: 0;
+			broder-radius: 0;
+			background-color: #1F1D1D;
+			color: #FFF;
+			padding: 1% 0;
+			font-size: 1.2em;
+			border: 0;
+		}
+		.navbar-brand {
+			float: left;
+			min-height: 55px;
+			padding: 0 15px 5px;
+		}
+		.navbar-inverse .navbar-nav .active a, navbar-inverse .navbar-nav .active a:focus,
+		navbar-inverse .navbar-nav .active a:hover {
+			color: #FFF;
+			background-color: #1F1D1D;
+		}
+		.navbar-inverse .navbar-nav li a {
+			color: #D5D5D5;
+		}
+		.carousel-caption {
+			top: 50%;
+			transform: translarteY(-50%);
+			text-transform: uppercase;
+		}
+		.btn {
+			font-size: 18px;
+			color: #FFF;
+			padding: 12px 22px;
+			background: #1F1D1D;
+			border: 2px solid #FFF;
+		}
+		.container {
+			margin: 4% auto;
+		}
+		footer {
+			width: 100%;
+			background-color: #1F1D1D;
+			padding: 5%;
+			color: #FFF;
+		}
+		footer input[type=text] {
+			border: 1px solid #D5D5D5;
+			background-color: #1F1D1D;
+			color: #FFF;
+		}
+		.fa {
+			padding: 20px;
+			font-size: 50px;
+			color: #FFF;
+		}
+		.fa:hover {
+			color: #D5D5D5;
+			text-decoration: none;
+		}
+		
+		
+		@media (max-width: 900px) {
+			.fa {
+				font-size: 20px;
+				padding: 10px;
+			}
+		}
+		
+		@media (max-width: 600px) {
+			.carousel-caption {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>	
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="csis.svsu.edu/~shuebler/module4/assignment4.html"><img src="img/logo.png" height="60"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/assignment4.html">Home</a></li>
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/baycitymenu.html">Bay City Menu</a></li>
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/saginawmenubay.html">Saginaw Menu (Bay Road)</a></li>
+					<li class="active"><a href="csis.svsu.edu/~shuebler/module4/saginawmenugratiot.html">Saginaw Menu (Gratiot Road)</a></li>
+					<li class="active"><a href="https://github.com/SpencerHD/module4">My Github</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container text-center">
+		<h1><strong>Explanations - CIS255 Bootstrap</strong></h1>
+		<br>
+		<br>
+		<h3><strong>Classes Used</strong></h3>
+		<br>
+		<h4><strong><u>navbar</u></strong></h4>
+		<p>The <strong>navbar</strong> was used to create a navigation pane on the top of the webpage. I created 5 buttons, with the company's
+		logo that redirects you home, and also styled the bar to be a certain color, and have certain padding to fit all the content on.</p>
+		<br>
+		<h4><strong><u>collpase navbar-collapse</u></strong></h4>
+		<p>Using <strong>collpase navbar-collapse</strong>, I was able to customize the buttons used in the navigation bar to change into a
+		expandable and collapsable button that shows and hides all of the buttons on a mobile web version of the page.</p>
+		<br>
+		<h4><strong><u>btn-primary</u></strong></h4>
+		<p>This property, <strong>btn-primary</strong>, was used with the button on the home page of the webpage. It sits inside the first
+		image of the carousel slide, and includes a link to take the user to this page.</p>
+		<br>
+		<h4><strong><u>btn-lg</u></strong></h4>
+		<p>As a property that affects the size of a button, <strong>btn-lg</strong> simply specifies whether the button is large, rather
+		than small. If you were to make a smaller button, use <i>btn-sm</i> as an alternative to this property. I used this to make the
+		button I used larger underneath the caption of the carousel.</p>
+		<br>
+		<h4><strong><u>carousel slide</u></strong></h4>
+		<p>In order to create a image slideshow that spans the header of the page, <strong>carousel slide</strong> is a property that
+		implements this idea. The slideshow only exists on the home page, but will scroll through different images of the business,
+		as well as giving the user options to go to the next image or previous image.</p>
+		<br>
+		<h4><strong><u>carousel-caption</u></strong></h4>
+		<p><strong>Carousel-caption</strong> is a useful property that adds a caption inside the image carousel the user creates. You can
+		modify the text anyway you choose, and also change the alignment of the text you add. I used this property to create essnetially
+		the "title" of the webpage.</p>
+		<br>
+		<h4><strong><u>text-center</u></strong></h4>
+		<p><strong>Text-center</strong> is an alignment property for text that aligns all text within that container or just that specific
+		text to the center of the page. I used this property within several containers to center my text, as well as <i>text-left</i> to
+		align text within my containers for the page, so the text doesn't sit on the far end of the page.</p>
+		<br>
+		<h4><strong><u>text-uppercase</u></strong></h4>
+		<p>As an alternative to typing it yourself, <strong>text-uppercase</strong> is a property that changes all text specified to appear
+		in all UPPERCASE, regardless of how the target text has been typed. I used this property to ensure my title for the webpage would
+		always appear in uppercase text.</p>
+		<br>
+		<h4><strong><u>collapse</u></strong></h4>
+		<p>While creating the collpasable button for the mobile version of the navbar, <strong>collapse</strong> is the property you would
+		use to invoke that action. In my webpage, its used in the mobile version to show all the navbar options, and within this property
+		I was able to customize how the button would look, as well.</p>
+		<br>
+		<h4><strong><u>col-sm-#</u></strong></h4>
+		<p>When specifying how many columns the coder wants and how wide each one should be, <strong>col-sm-#</strong> is the property used
+		to create those columns for your webpage. I used these in the footer of the pages to create three columns for a search bar, the 
+		Facebook link, and the Twitter link for the business.</p>
+		<br>
+		<br>
+		<h3><strong>WordPress vs. Bootstrap</strong></h3>
+	</div>
+	
+	<div class="container text-left">
+		<p>I found this assignment a bit challenging, but I also felt very accomplished when it was completed for the end product.
+		The main difference between using WordPress or using Bootstrap is how you create the webpage itself. With WordPress, a lot of the 
+		content you create is visual based and requires less coding, but that also makes it easier for users who don't have much experience 
+		with coding to make their own webpage. Bootstrap, however, is much more hands-on. You really are essentially making a webpage 
+		"from-scratch," and this allows you to better customize your webpage to look like whatever you design. Essentially, Bootstrap 
+		requires more coding, but allows you to customize much more than WordPress allows.</p>
+		<p>When talking about usability, Bootstrap requires you to specify exactly how you would like something to appear on the page.
+    For instance, the navigation bar at the top of the page only requires you to add the links to different webpages and where
+    you want those links to go in WordPress. Bootstrap, however, has you customize the color of the bar, the padding, the icon size,
+    and much more as you continue on with building your page. Coding a webpage from scratch gives you the ability to change just about
+    everything you would like to, where you don't have that freedom when using a service like WordPress. I preferred the freedom and
+    choices of using bootstrap, although it was more difficult, and would be able to further customize my webpage if I chose to in the
+    future.</p>
+	</div>
+	
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<h4>Document made for CIS255 at Saginaw Valley State University</h4>
+		</div>
+	</footer>
+
+</body>
+</html>
